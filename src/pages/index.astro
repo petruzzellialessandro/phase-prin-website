@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <div class="min-h-screen">
+
+      {/* Hero Section */}
+      <section class="bg-gradient-to-br from-green-900 to-green-800 text-white py-24 px-6 text-center shadow-lg relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-md">
+            PHaSE Project
+            </h1>
+            <p class="max-w-3xl mx-auto text-xl md:text-2xl mb-8 font-light text-green-50">
+            Promoting Healthy and Sustainable Eating through Interactive and Explainable AI Methods
+            </p>
+            <div class="inline-block bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl">
+                <p class="text-lg md:text-xl font-medium tracking-wide">
+                PRIN 2022 – Prot. 2022H5X7BK <span class="mx-2 opacity-50">|</span> 24 Months
+                <br />
+                <span class="text-green-300 text-base mt-2 block font-medium">Funded by the Italian Ministry of University and Research (MUR)</span>
+                </p>
+            </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 inline-block relative">
+                Project Overview
+                <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-green-600 rounded-full"></div>
+            </h2>
+        </div>
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 relative group transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+            <div class="absolute -top-6 -left-6 text-9xl text-green-100 opacity-50 select-none font-serif group-hover:text-green-200 transition-colors duration-300">"</div>
+            <p class="text-xl leading-relaxed text-gray-700 relative z-10 text-justify">
+            <strong class="text-gray-900 font-bold">PHaSE</strong> aimed to advance the state of the art in AI-based food recommender systems by integrating
+            conversational agents, explainable AI, and persuasive dialogue strategies to foster healthier
+            and more sustainable eating behaviors.
+            <br/><br/>
+            The project combined recommender systems, question answering over knowledge graphs,
+            user modeling, and natural language generation into a fully working conversational agent.
+            The system supports users in identifying healthy and sustainable recipes, understanding
+            nutritional and environmental impact, and discovering substitute ingredients and meals.
+            </p>
+        </div>
+      </section>
+
+      {/* Scientific Goals */}
+      <section class="bg-gray-100 py-24 px-6 border-y border-gray-200 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/50 backdrop-blur-[1px]"></div>
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 inline-block relative">
+                    Scientific Objectives
+                    <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-green-600 rounded-full"></div>
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 group">
+                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-700 font-bold text-2xl mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300 shadow-sm">G1</div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Food Recommender System</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Development of a knowledge-based food recommender system suggesting
+                    healthy and sustainable recipes tailored to users’ preferences,
+                    physiological characteristics and goals.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 group">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-700 font-bold text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-sm">G2</div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Question Answering</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Implementation of a QA component to answer natural language
+                    questions about ingredients, recipes, sustainability and
+                    identification of healthier substitutes.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 group">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-700 font-bold text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 shadow-sm">G3</div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Persuasive Dialogue</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Design of persuasive natural language strategies grounded in
+                    behavioral theories to enhance awareness, transparency,
+                    and trust in AI-driven recommendations.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 group">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-700 font-bold text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300 shadow-sm">G4</div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Conversational Agent</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Integration of RS, QA, NLU and NLG modules into a fully working
+                    conversational agent evaluated “in the wild” with users.
+                </p>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Consortium */}
+      <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 inline-block relative">
+                Consortium
+                <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-green-600 rounded-full"></div>
+            </h2>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+
+          <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+            <div class="absolute top-0 left-0 w-full h-2 bg-green-600"></div>
+              <h3 class="text-2xl font-bold mb-1 text-gray-900">UNIBA</h3>
+              <p class="text-green-600 font-bold text-sm uppercase tracking-wider mb-6">Coordinating Unit</p>
+              <div class="space-y-4 text-gray-600">
+                  <p><strong class="text-gray-800">Principal Investigator:</strong> Cataldo Musto</p>
+                  <p><strong class="text-gray-800">Expertise:</strong> Natural Language Processing, Conversational Agents, Explainable AI.</p>
+                  <p><strong class="text-gray-800">Role:</strong> Responsible for Dialogue, NLU, NLG and system integration.</p>
+              </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+            <div class="absolute top-0 left-0 w-full h-2 bg-blue-500"></div>
+              <h3 class="text-2xl font-bold mb-1 text-gray-900">UNICA</h3>
+              <p class="text-blue-500 font-bold text-sm uppercase tracking-wider mb-6">Partner Unit</p>
+              <div class="space-y-4 text-gray-600">
+                  <p><strong class="text-gray-800">Unit Leader:</strong> Ludovico Boratto</p>
+                  <p><strong class="text-gray-800">Expertise:</strong> Recommender Systems, Knowledge Graphs, Sustainability-aware algorithms.</p>
+                  <p><strong class="text-gray-800">Role:</strong> Responsible for Food RS, data modeling and dissemination.</p>
+              </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+            <div class="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
+              <h3 class="text-2xl font-bold mb-1 text-gray-900">UNITO</h3>
+              <p class="text-red-500 font-bold text-sm uppercase tracking-wider mb-6">Partner Unit</p>
+              <div class="space-y-4 text-gray-600">
+                  <p><strong class="text-gray-800">Unit Leader:</strong> Amon Rapp</p>
+                  <p><strong class="text-gray-800">Expertise:</strong> Human–Computer Interaction, Co-design, User Evaluation.</p>
+                  <p><strong class="text-gray-800">Role:</strong> Responsible for participatory design and evaluation studies.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results */}
+      <section class="bg-gray-900 text-white py-24 px-6 md:px-12 relative overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold inline-block relative text-white">
+                    Results & Outputs
+                    <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-green-400 rounded-full"></div>
+                </h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+
+            <div class="bg-gray-800/80 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border border-gray-700/50">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-green-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                    Scientific Publications
+                </h3>
+                <ul class="space-y-5 text-gray-300 text-lg">
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><strong class="text-white font-semibold">E-Mealio:</strong> An LLM-Powered Conversational Agent for Sustainable and Healthy Food Recommendation <br/><em class="text-green-300 text-base">(RecSoGood 2025)</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations <br/><em class="text-green-300 text-base">(RecSys 2024)</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug">Recommending Healthy and Sustainable Meals exploiting Food Retrieval and LLMs <br/><em class="text-green-300 text-base">(RecSys 2024)</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><strong class="text-white font-semibold">HeASe:</strong> An AI-powered Framework to Promote Healthy and Sustainable Eating <br/><em class="text-green-300 text-base">(IJCAI 2024 Workshop)</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><strong class="text-white font-semibold">FoodNexus:</strong> Massive Food Knowledge for Recommender Systems <br/><em class="text-green-300 text-base">(ECIR 2025)</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><strong class="text-white font-semibold">GreenFoodLens:</strong> Sustainability Labels for Food Recommendation <br/><em class="text-green-300 text-base">(RecSys 2025)</em></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-8 flex flex-col justify-center">
+                <div class="bg-gradient-to-br from-green-800 to-green-900 rounded-3xl p-8 md:p-10 shadow-2xl border border-green-700 hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] transition-shadow duration-300 text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-white flex items-center justify-center md:justify-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        Open Science & Impact
+                    </h3>
+                    <p class="text-lg text-green-100/90 leading-relaxed font-light">
+                        PHaSE adopted an Open Science approach, releasing datasets,
+                        knowledge graphs, APIs and software components.
+                        The project contributes to sustainable food consumption,
+                        ecological transition and AI transparency.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border border-gray-700/50 hover:border-gray-600 transition-colors duration-300 text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-white flex items-center justify-center md:justify-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        Evaluation
+                    </h3>
+                    <p class="text-lg text-gray-300/90 leading-relaxed font-light">
+                    The system was evaluated through iterative co-design cycles and a
+                    final three-month field study involving experimental and control groups.
+                    Results showed increased awareness of food healthiness and sustainability,
+                    and positive perception of persuasive explanations.
+                    </p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+      </section>
+
+      {/* Footer / Contact */}
+      <footer class="bg-white py-16 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact</h2>
+        <a href="mailto:cataldo.musto@uniba.it" class="text-xl text-green-700 font-semibold mb-8 hover:text-green-500 transition-colors cursor-pointer inline-block border-b-2 border-transparent hover:border-green-500 pb-1">cataldo.musto@uniba.it</a>
+        <div class="text-gray-500 mt-8 font-light">
+            <p>© 2026 PHaSE Project</p>
+        </div>
+      </footer>
+
+    </div>
+</Layout>
