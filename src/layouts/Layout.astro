@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import logo from '../assets/logos/logo.png';
 ---
 
 <!doctype html>
@@ -19,7 +20,7 @@ import '../styles/global.css';
 		<!-- Sticky / Fixed Footer with Logos -->
 		<footer class="fixed bottom-0 w-full bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 py-3 px-4 flex justify-center items-center">
 			<div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 max-w-6xl mx-auto h-16">
-				<img src="/logos/logo_p4_2.png" alt="PRIN PNRR Logo" class="h-12 md:h-16 object-contain" />
+				<img src={logo.src} alt="PRIN PNRR Logo" class="h-12 md:h-16 object-contain" />
 			</div>
 		</footer>
 	</body>
