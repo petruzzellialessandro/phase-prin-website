@@ -3,7 +3,20 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-    <div class="min-h-screen">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-green-800 tracking-tight">PHaSE</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#overview" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Overview</a>
+                <a href="#objectives" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Objectives</a>
+                <a href="#consortium" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Consortium</a>
+                <a href="#results" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Dissemination</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="min-h-screen pt-16">
 
       {/* Hero Section */}
       <section class="bg-gradient-to-br from-green-900 to-green-800 text-white py-24 px-6 text-center shadow-lg relative overflow-hidden">
@@ -17,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
             </p>
             <div class="inline-block bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl">
                 <p class="text-lg md:text-xl font-medium tracking-wide">
-                PRIN 2022 – Prot. 2022H5X7BK <span class="mx-2 opacity-50">|</span> 24 Months
+                PRIN 2022 – Prot. 2022H5X7BK <span class="mx-2 opacity-50">|</span> CUP: H53D23003530006 <span class="mx-2 opacity-50">|</span> 24 Months
                 <br />
                 <span class="text-green-300 text-base mt-2 block font-medium">Funded by the Italian Ministry of University and Research (MUR)</span>
                 </p>
@@ -26,7 +39,7 @@ import Layout from '../layouts/Layout.astro';
       </section>
 
       {/* About Section */}
-      <section class="py-20 px-6 max-w-5xl mx-auto">
+      <section id="overview" class="py-20 px-6 max-w-5xl mx-auto scroll-mt-20">
         <div class="text-center mb-12">
             <h2 class="text-4xl font-bold text-gray-900 inline-block relative">
                 Project Overview
@@ -49,7 +62,7 @@ import Layout from '../layouts/Layout.astro';
       </section>
 
       {/* Scientific Goals */}
-      <section class="bg-gray-100 py-24 px-6 border-y border-gray-200 relative overflow-hidden">
+      <section id="objectives" class="bg-gray-100 py-24 px-6 border-y border-gray-200 relative overflow-hidden scroll-mt-20">
         <div class="absolute inset-0 bg-white/50 backdrop-blur-[1px]"></div>
         <div class="relative z-10">
             <div class="text-center mb-16">
@@ -103,7 +116,7 @@ import Layout from '../layouts/Layout.astro';
       </section>
 
       {/* Consortium */}
-      <section class="py-24 px-6 max-w-7xl mx-auto">
+      <section id="consortium" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-20">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-gray-900 inline-block relative">
                 Consortium
@@ -117,7 +130,7 @@ import Layout from '../layouts/Layout.astro';
               <h3 class="text-2xl font-bold mb-1 text-gray-900">UNIBA</h3>
               <p class="text-green-600 font-bold text-sm uppercase tracking-wider mb-6">Coordinating Unit</p>
               <div class="space-y-4 text-gray-600">
-                  <p><strong class="text-gray-800">Principal Investigator:</strong> Cataldo Musto</p>
+                  <p><strong class="text-gray-800">Principal Investigator:</strong> Prof. Cataldo Musto</p>
                   <p><strong class="text-gray-800">Expertise:</strong> Natural Language Processing, Conversational Agents, Explainable AI.</p>
                   <p><strong class="text-gray-800">Role:</strong> Responsible for Dialogue, NLU, NLG and system integration.</p>
               </div>
@@ -128,7 +141,7 @@ import Layout from '../layouts/Layout.astro';
               <h3 class="text-2xl font-bold mb-1 text-gray-900">UNICA</h3>
               <p class="text-blue-500 font-bold text-sm uppercase tracking-wider mb-6">Partner Unit</p>
               <div class="space-y-4 text-gray-600">
-                  <p><strong class="text-gray-800">Unit Leader:</strong> Ludovico Boratto</p>
+                  <p><strong class="text-gray-800">Unit Leader:</strong> Prof. Ludovico Boratto</p>
                   <p><strong class="text-gray-800">Expertise:</strong> Recommender Systems, Knowledge Graphs, Sustainability-aware algorithms.</p>
                   <p><strong class="text-gray-800">Role:</strong> Responsible for Food RS, data modeling and dissemination.</p>
               </div>
@@ -139,7 +152,7 @@ import Layout from '../layouts/Layout.astro';
               <h3 class="text-2xl font-bold mb-1 text-gray-900">UNITO</h3>
               <p class="text-red-500 font-bold text-sm uppercase tracking-wider mb-6">Partner Unit</p>
               <div class="space-y-4 text-gray-600">
-                  <p><strong class="text-gray-800">Unit Leader:</strong> Amon Rapp</p>
+                  <p><strong class="text-gray-800">Unit Leader:</strong> Prof. Amon Rapp</p>
                   <p><strong class="text-gray-800">Expertise:</strong> Human–Computer Interaction, Co-design, User Evaluation.</p>
                   <p><strong class="text-gray-800">Role:</strong> Responsible for participatory design and evaluation studies.</p>
               </div>
@@ -148,14 +161,14 @@ import Layout from '../layouts/Layout.astro';
       </section>
 
       {/* Results */}
-      <section class="bg-gray-900 text-white py-24 px-6 md:px-12 relative overflow-hidden">
+      <section id="results" class="bg-gray-900 text-white py-24 px-6 md:px-12 relative overflow-hidden scroll-mt-20">
         <div class="absolute -top-40 -right-40 w-96 h-96 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
         <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
 
         <div class="relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold inline-block relative text-white">
-                    Results & Outputs
+                    Dissemination
                     <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-green-400 rounded-full"></div>
                 </h2>
             </div>
@@ -169,56 +182,155 @@ import Layout from '../layouts/Layout.astro';
                 <ul class="space-y-5 text-gray-300 text-lg">
                     <li class="flex items-start gap-3 group">
                         <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
-                        <span class="leading-snug"><strong class="text-white font-semibold">E-Mealio:</strong> An LLM-Powered Conversational Agent for Sustainable and Healthy Food Recommendation <br/><em class="text-green-300 text-base">(RecSoGood 2025)</em></span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1007/978-3-032-13342-7_12" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">E-Mealio:</strong> An LLM-Powered Conversational Agent for Sustainable and Healthy Food Recommendation</a> <br/><em class="text-gray-400 text-sm block mt-1">Iacovazzi, A.R., Blanco, L., Spillo, G., Musto, C. (2026).</em></span>
                     </li>
                     <li class="flex items-start gap-3 group">
                         <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
-                        <span class="leading-snug">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations <br/><em class="text-green-300 text-base">(RecSys 2024)</em></span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1145/3640457.3688137" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">A. Petruzzelli, C. Musto, L. Laraspata, I. Rinaldi, M. de Gemmis, P. Lops, G. Semeraro</em></span>
                     </li>
                     <li class="flex items-start gap-3 group">
                         <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
-                        <span class="leading-snug">Recommending Healthy and Sustainable Meals exploiting Food Retrieval and LLMs <br/><em class="text-green-300 text-base">(RecSys 2024)</em></span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1145/3640457.3688193" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">Recommending Healthy and Sustainable Meals exploiting Food Retrieval and Large Language Models</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">A. Petruzzelli, C. Musto, M.C. Di Carlo, G. Tempesta, G. Semeraro</em></span>
                     </li>
                     <li class="flex items-start gap-3 group">
                         <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
-                        <span class="leading-snug"><strong class="text-white font-semibold">HeASe:</strong> An AI-powered Framework to Promote Healthy and Sustainable Eating <br/><em class="text-green-300 text-base">(IJCAI 2024 Workshop)</em></span>
+                        <span class="leading-snug"><a href="https://ceur-ws.org/Vol-3951/paper-03.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">HeASe:</strong> An AI-powered Framework to Promote Healthy and Sustainable Eating</a> <br/><em class="text-gray-400 text-sm block mt-1">A. Petruzzelli, C. Musto, M.C. Di Carlo, G. Tempesta, G. Semeraro</em></span>
                     </li>
                     <li class="flex items-start gap-3 group">
                         <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
-                        <span class="leading-snug"><strong class="text-white font-semibold">FoodNexus:</strong> Massive Food Knowledge for Recommender Systems <br/><em class="text-green-300 text-base">(ECIR 2025)</em></span>
+                        <span class="leading-snug"><strong class="text-white font-semibold">FoodNexus:</strong> Massive Food Knowledge for Recommender Systems <br/><em class="text-gray-400 text-sm block mt-1">Boratto, L., Fenu, G., Marras, M., Medda, G., & Zedda, G.</em> <span class="text-green-300 text-sm">(Published in ECIR 2026)</span></span>
                     </li>
                     <li class="flex items-start gap-3 group">
                         <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
-                        <span class="leading-snug"><strong class="text-white font-semibold">GreenFoodLens:</strong> Sustainability Labels for Food Recommendation <br/><em class="text-green-300 text-base">(RecSys 2025)</em></span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1145/3746252.3761641" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">hopwise:</strong> A Python Library for Explainable Recommendation based on Path Reasoning over Knowledge Graphs</a> <br/><em class="text-gray-400 text-sm block mt-1">Boratto, L., Fenu, G., Marras, M., Medda, G., & Soccol, A.</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1145/3705328.3748165" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">GreenFoodLens:</strong> Sustainability Labels for Food Recommendation</a> <br/><em class="text-gray-400 text-sm block mt-1">Balloccu, G., Boratto, L., Fenu, G., Marras, M., & Murgia, G.</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1145/3640457.3688064" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">Fair augmentation for graph collaborative filtering</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">Boratto, L., Fabbri, F., Fenu, G., Marras, M., & Medda, G.</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><a href="https://hdl.handle.net/11584/431267" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">Comprehensive Assessment of Robustness in Fairness of GNN-based Recommender Systems against Attacks</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">Boratto, L., Fabbri, F., Fenu, G., Marras, M., & Medda, G.</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1145/3708319.3733661" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">PHaSE Project - Promoting Healthy and Sustainable Eating through Interactive and Explainable AI Methods</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">Musto, C., Rapp, A., and Boratto, L. (2025).</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><a href="https://doi.org/10.1007/978-3-031-93508-4_21" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">Designing for Healthy Food Practices: Challenges and Opportunities for Changing People’s Eating Behavior Using Persuasive Technology</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">Rapp, A., Boldi, A. (2025).</em></span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <span class="text-green-500 mt-1 transform group-hover:scale-125 transition-transform duration-200">⯈</span>
+                        <span class="leading-snug"><a href="http://doi.org/10.54941/ahfe1006219" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors"><strong class="text-white font-semibold group-hover:text-green-400 transition-colors">Promoting Healthy Eating by Design: Opportunities for Meaningful Persuasive Technologies</strong></a> <br/><em class="text-gray-400 text-sm block mt-1">Rapp, A., Boldi, A. (2025).</em></span>
                     </li>
                 </ul>
             </div>
 
             <div class="space-y-8 flex flex-col justify-center">
-                <div class="bg-gradient-to-br from-green-800 to-green-900 rounded-3xl p-8 md:p-10 shadow-2xl border border-green-700 hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] transition-shadow duration-300 text-center md:text-left">
-                    <h3 class="text-2xl font-bold mb-4 text-white flex items-center justify-center md:justify-start gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div class="bg-gradient-to-br from-green-800 to-green-900 rounded-3xl p-8 md:p-10 shadow-2xl border border-green-700 hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] transition-shadow duration-300 h-full flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold mb-4 text-white flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         Open Science & Impact
                     </h3>
-                    <p class="text-lg text-green-100/90 leading-relaxed font-light">
+                    <p class="text-lg text-green-100/90 leading-relaxed font-light mb-8">
                         PHaSE adopted an Open Science approach, releasing datasets,
                         knowledge graphs, APIs and software components.
                         The project contributes to sustainable food consumption,
                         ecological transition and AI transparency.
                     </p>
+
+                    <div class="space-y-4">
+                        <div class="bg-green-900/40 rounded-xl p-4 border border-green-700/50 hover:bg-green-800/60 transition-colors">
+                            <h4 class="text-white font-semibold text-lg mb-2">FoodNexus</h4>
+                            <div class="flex flex-wrap gap-3 text-sm">
+                                <a href="https://zenodo.org/records/15710771" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                                    Dataset
+                                </a>
+                                <a href="https://github.com/tail-unica/food-nexus" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-900/40 rounded-xl p-4 border border-green-700/50 hover:bg-green-800/60 transition-colors">
+                            <h4 class="text-white font-semibold text-lg mb-2">hopwise</h4>
+                            <div class="flex flex-wrap gap-3 text-sm">
+                                <a href="https://github.com/tail-unica/hopwise" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-900/40 rounded-xl p-4 border border-green-700/50 hover:bg-green-800/60 transition-colors">
+                            <h4 class="text-white font-semibold text-lg mb-2">GreenFoodLens</h4>
+                            <div class="flex flex-wrap gap-3 text-sm">
+                                <a href="https://zenodo.org/records/15398477" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                                    Dataset
+                                </a>
+                                <a href="https://github.com/jackmedda/GreenFoodLens" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-900/40 rounded-xl p-4 border border-green-700/50 hover:bg-green-800/60 transition-colors">
+                            <h4 class="text-white font-semibold text-lg mb-2">FA4GCF</h4>
+                            <div class="flex flex-wrap gap-3 text-sm">
+                                <a href="https://github.com/jackmedda/FA4GCF" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-900/40 rounded-xl p-4 border border-green-700/50 hover:bg-green-800/60 transition-colors">
+                            <h4 class="text-white font-semibold text-lg mb-2">Comprehensive Assessment of Robustness in Fairness of GNN-based Recommender Systems against Attacks</h4>
+                            <div class="flex flex-wrap gap-3 text-sm">
+                                <a href="https://github.com/jackmedda/CPFairRobust" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-green-300 hover:text-green-400 font-medium">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bg-gray-800/80 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border border-gray-700/50 hover:border-gray-600 transition-colors duration-300 text-center md:text-left">
-                    <h3 class="text-2xl font-bold mb-4 text-white flex items-center justify-center md:justify-start gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
-                        Evaluation
+                    <h3 class="text-2xl font-bold mb-6 text-white flex items-center justify-center md:justify-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        Events
                     </h3>
-                    <p class="text-lg text-gray-300/90 leading-relaxed font-light">
-                    The system was evaluated through iterative co-design cycles and a
-                    final three-month field study involving experimental and control groups.
-                    Results showed increased awareness of food healthiness and sustainability,
-                    and positive perception of persuasive explanations.
+                    <p class="text-lg text-gray-300/90 leading-relaxed font-light mb-6">
+                    Project dissemination included presentations at several national and international conferences:
                     </p>
+                    <ul class="text-left text-gray-300 space-y-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">✓</span>
+                            <span><strong>RecSys 2024 & 2025</strong> (ACM Conference on Recommender Systems)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">✓</span>
+                            <span><strong>ECIR 2025 & 2026</strong> (European Conference on Information Retrieval)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">✓</span>
+                            <span><strong>IJCAI 2024</strong> (Int. Joint Conference on Artificial Intelligence - Workshop)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">✓</span>
+                            <span><strong>RecSoGood 2025</strong></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
